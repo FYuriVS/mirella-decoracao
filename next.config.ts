@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)", // Aplica as regras para todas as rotas
+        source: "/(.*)",
         headers: [
           {
             key: "Cache-Control",

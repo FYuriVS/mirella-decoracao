@@ -1,16 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingCart, Search, User } from "lucide-react";
+import { Search } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useCart } from "./CartContext";
-import { Button } from "./button";
 import Image from "next/image";
 import { searchProducts } from "../app/actions/searchProduct"; // Importe a função de busca
 
 export function Header() {
-    const { cart } = useCart();
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     const [results, setResults] = useState([] as any);
 

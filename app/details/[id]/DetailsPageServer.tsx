@@ -1,4 +1,3 @@
-// /app/product/[id]/DetailsPageServer.tsx
 import { getProductById } from '@/app/actions/getProductById'
 import DetailsPageClient from './DetailsPageClient';
 
@@ -14,6 +13,7 @@ export default async function DetailsPageServer({ params }: { params: Promise<{ 
 
         return <DetailsPageClient product={product} />;
     } catch (error) {
-        return <div>Ocorreu um erro ao buscar o produto</div>;
+        console.error('Erro ao buscar produto:', error);
+        return <div>Ocorreu um erro ao buscar o produto </div>;
     }
 }

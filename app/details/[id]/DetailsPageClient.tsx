@@ -53,7 +53,7 @@ export default function DetailsPageClient({ product }: { product: ProductType })
                     <h1 className="text-2xl sm:text-3xl font-bold mb-4">{product.name}</h1>
                     <p className="mb-4">{product.description}</p>
                 </div>
-                <Button className="w-full sm:w-auto background-btn-theme"><Link href={`https://wa.me/85987026545/?text=Gostaria%20de%20saber%20mais%20informações%20sobre%20o%20produto%20${product.name}`}>
+                <Button className="w-full sm:w-auto background-btn-theme"><Link href={`https://wa.me/+5585987026545/?text=Gostaria%20de%20saber%20mais%20informações%20sobre%20o%20produto%20${product.name}`}>
                     Entrar em contato
                 </Link></Button>
             </div>

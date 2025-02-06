@@ -14,7 +14,7 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Links Úteis</h3>
                         <ul className="space-y-2">
                             <li><Link href="/" className="hover:underline">Página Inicial</Link></li>
-                            <li><Link href="#" className="hover:underline flex gap-1"><Instagram /> Instagram</Link></li>
+                            <li><Link href="https://www.instagram.com/mirelladecoracao?igsh=bzd1b2N1OG9nc2Rq" className="hover:underline flex gap-1"><Instagram /> Instagram</Link></li>
                         </ul>
                     </div>
                     <div>

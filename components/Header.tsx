@@ -26,7 +26,7 @@ export function Header() {
 
     return (
         <header className="sticky top-0 z-50 shadow-md bg-white">
-            <div className="container mx-auto p-1 flex items-center justify-between">
+            <div className="container mx-auto px-1 flex items-center justify-between">
                 <Link href="/" className="text-2xl font-bold p-1">
                     <Image className="rounded-full" src={"/logo.jpeg"} alt="logo" width={90} height={80} />
                 </Link>

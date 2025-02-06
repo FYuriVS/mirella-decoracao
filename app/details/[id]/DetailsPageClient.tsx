@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { ImageType, ProductType, } from '@/app/types/Product';
+import Link from 'next/link';
 
 export default function DetailsPageClient({ product }: { product: ProductType }) {
     const hasImages = product.product_images && product.product_images.length > 0;
@@ -52,7 +53,9 @@ export default function DetailsPageClient({ product }: { product: ProductType })
                     <h1 className="text-2xl sm:text-3xl font-bold mb-4">{product.name}</h1>
                     <p className="mb-4">{product.description}</p>
                 </div>
-                <Button className="w-full sm:w-auto background-btn-theme">Entrar em contato</Button>
+                <Button className="w-full sm:w-auto background-btn-theme"><Link href={`https://wa.me/?text=Gostaria%20de%20saber%20mais%20informações%20sobre%20o%20produto%20${product.name}`}>
+                    Entrar em contato
+                </Link></Button>
             </div>
         </div>
     )

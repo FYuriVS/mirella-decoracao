@@ -1,8 +1,8 @@
-export type Product = {
+export type ProductType = {
     id: string;
     name: string;
     description: string;
-    product_images: Image[];
+    product_images: ImageType[];
 };
 
-export type Image = { image_url: string }
+export type ImageType = { image_url: string }

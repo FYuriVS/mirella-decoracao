@@ -3,8 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
+import { ImageType, ProductType, } from '@/app/types/Product';
 
-export default function DetailsPageClient({ product }: { product: Product }) {
+export default function DetailsPageClient({ product }: { product: ProductType }) {
     const hasImages = product.product_images && product.product_images.length > 0;
     const firstImage = hasImages ? product.product_images[0].image_url : "https://grox9jhbcjwwn22qv.lite.vusercontent.net/placeholder.svg";
 
@@ -27,7 +28,7 @@ export default function DetailsPageClient({ product }: { product: Product }) {
                 </div>
                 <div className="flex justify-center gap-2">
                     {hasImages ? (
-                        product.product_images.map((image: Image, index: number) => (
+                        product.product_images.map((image: ImageType, index: number) => (
                             <button
                                 key={index}
                                 className={`w-16 h-16 relative ${mainImage === image.image_url ? 'border-2 border-blue-500' : ''}`}

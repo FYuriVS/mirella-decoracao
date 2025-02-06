@@ -6,6 +6,7 @@ import { CartProvider } from '@/components/CartContext'
 import { Header } from '@/components/Header'
 const inter = Inter({ subsets: ['latin'] })
 
+export const revalidate = 0
 export const metadata: Metadata = {
   title: 'Mirella Monteiro',
   description: 'Mirella Monteiro decoração',

@@ -8,7 +8,7 @@ import { searchProducts } from "../app/actions/searchProduct"; // Importe a funÃ
 
 export function Header() {
     const [searchTerm, setSearchTerm] = useState("");
-    const [results, setResults] = useState([] as any);
+    const [results, setResults] = useState([] as Product[]);
 
     useEffect(() => {
         if (searchTerm.length > 2) {  // SÃ³ busca se houver pelo menos 3 caracteres
@@ -46,7 +46,7 @@ export function Header() {
                         {/* Dropdown de Resultados */}
                         {results.length > 0 && (
                             <div className="absolute top-full left-0 w-full bg-white shadow-md rounded-md mt-2 max-h-60 overflow-y-auto">
-                                {results.map((product: any) => (
+                                {results.map((product: Product) => (
                                     <Link
                                         key={product.id}
                                         href={`/details/${product.id}`}

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Search } from "lucide-react";
 import { useState, useEffect } from "react";
-import { useCart } from "./CartContext";
 import Image from "next/image";
 import { searchProducts } from "../app/actions/searchProduct"; // Importe a função de busca
 

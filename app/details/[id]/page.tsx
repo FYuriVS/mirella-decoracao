@@ -1,5 +1,9 @@
 import DetailsPageServer from './DetailsPageServer';
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
+interface ProductPageProps {
+    params: { id: string };
+}
+
+export default async function ProductPage({ params }: ProductPageProps) {
     return <DetailsPageServer params={params} />;
 }

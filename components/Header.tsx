@@ -5,10 +5,11 @@ import { Search } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { searchProducts } from "../app/actions/searchProduct"; // Importe a função de busca
+import { ProductType } from "@/app/types/Product";
 
 export function Header() {
     const [searchTerm, setSearchTerm] = useState("");
-    const [results, setResults] = useState([] as Product[]);
+    const [results, setResults] = useState([] as ProductType[]);
 
     useEffect(() => {
         if (searchTerm.length > 2) {  // Só busca se houver pelo menos 3 caracteres
@@ -46,7 +47,7 @@ export function Header() {
                         {/* Dropdown de Resultados */}
                         {results.length > 0 && (
                             <div className="absolute top-full left-0 w-full bg-white shadow-md rounded-md mt-2 max-h-60 overflow-y-auto">
-                                {results.map((product: Product) => (
+                                {results.map((product: ProductType) => (
                                     <Link
                                         key={product.id}
                                         href={`/details/${product.id}`}

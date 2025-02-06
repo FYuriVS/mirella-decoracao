@@ -54,7 +54,7 @@ export default function DetailsPageClient({ product }: { product: ProductType })
                     <p className="mb-4">{product.description}</p>
                 </div>
                 <Link
-                    href={`https://wa.me/+5585987026545/?text=Gostaria%20de%20saber%20mais%20informações%20sobre%20o%20produto%20${product.name}`}
+                    href={`https://wa.me/+5585987026545/?text=Gostaria%20de%20saber%20mais%20informações%20sobre%20${product.name}`}
                 ><Button className="w-full sm:w-auto background-btn-theme">
                         Entrar em contato
                     </Button></Link>

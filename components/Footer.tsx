@@ -19,9 +19,9 @@ export default function Footer() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contato</h3>
-                        <p>Email: contato@ecommerce.com</p>
+                        <p>Email: contato@email.com</p>
                         <p>Telefone: (85) 98702-6545</p>
-                        <p>Endereço: Rua do Comércio, 123 - São Paulo, SP</p>
+                        <p>Endereço: Rua tal no bairro tal numero tal</p>
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-200 text-center">

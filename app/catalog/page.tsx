@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { getProducts } from "../actions/getProducts";
 import ProductCard from "@/components/ProductCard";
 

@@ -8,16 +8,16 @@ export default async function CatalogPage() {
     return (
         <div className="min-h-screen flex flex-col">
             <main className="flex-grow container mx-auto px-4 py-8">
-                <div className="relative h-64 md:h-96 mb-12 rounded-lg overflow-hidden">
+                {/* <div className="relative h-64 md:h-96 mb-12 rounded-lg overflow-hidden">
                     <Image
                         src={"https://grox9jhbcjwwn22qv.lite.vusercontent.net/placeholder.svg"}
                         alt="Banner"
                         fill
                         style={{ objectFit: "cover" }}
                     />
-                </div>
+                </div> */}
 
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Produtos em Destaque!</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">Catálogo</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {products.map((product) => (
                         <ProductCard key={product.id} product={product} />

@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['lcqoazdeokbijrxfvsvg.supabase.co'],
+    domains: ["jdqsvduxqblskboozypp.supabase.co"],
   },
   async headers() {
     return [

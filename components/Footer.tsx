@@ -19,9 +19,9 @@ export default function Footer() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contato</h3>
-                        <p>Email: contato@email.com</p>
+                        <p>Email: mirellagadelha8@gmail.com</p>
                         <p>Telefone: (85) 98702-6545</p>
-                        <p>Endereço: Rua tal no bairro tal numero tal</p>
+                        <p>Endereço: Rua João Vitor,2460 - Bom Jardim</p>
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-200 text-center">
